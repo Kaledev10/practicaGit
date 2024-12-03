@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            checkBox1 = new CheckBox();
+            txtTelegrama = new TextBox();
+            chkUrgente = new CheckBox();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtPrecio = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
@@ -46,22 +46,22 @@
             label1.Text = "texto";
             label1.Click += label1_Click;
             // 
-            // textBox1
+            // txtTelegrama
             // 
-            textBox1.Location = new Point(53, 105);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(280, 23);
-            textBox1.TabIndex = 1;
+            txtTelegrama.Location = new Point(53, 105);
+            txtTelegrama.Name = "txtTelegrama";
+            txtTelegrama.Size = new Size(280, 23);
+            txtTelegrama.TabIndex = 1;
             // 
-            // checkBox1
+            // chkUrgente
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(59, 198);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(72, 19);
-            checkBox1.TabIndex = 2;
-            checkBox1.Text = "urgente?";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkUrgente.AutoSize = true;
+            chkUrgente.Location = new Point(59, 198);
+            chkUrgente.Name = "chkUrgente";
+            chkUrgente.Size = new Size(72, 19);
+            chkUrgente.TabIndex = 2;
+            chkUrgente.Text = "urgente?";
+            chkUrgente.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -73,12 +73,12 @@
             label2.Text = "coste";
             label2.Click += label2_Click;
             // 
-            // textBox2
+            // txtPrecio
             // 
-            textBox2.Location = new Point(130, 229);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 4;
+            txtPrecio.Location = new Point(130, 229);
+            txtPrecio.Name = "txtPrecio";
+            txtPrecio.Size = new Size(100, 23);
+            txtPrecio.TabIndex = 4;
             // 
             // button1
             // 
@@ -96,10 +96,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
-            Controls.Add(textBox2);
+            Controls.Add(txtPrecio);
             Controls.Add(label2);
-            Controls.Add(checkBox1);
-            Controls.Add(textBox1);
+            Controls.Add(chkUrgente);
+            Controls.Add(txtTelegrama);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -110,10 +110,10 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private CheckBox checkBox1;
+        private TextBox txtTelegrama;
+        private CheckBox chkUrgente;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtPrecio;
         private Button button1;
     }
 }
